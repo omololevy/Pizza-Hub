@@ -71,7 +71,7 @@ h5 {
     font-weight: 800;
 }
 .controls-top h2{
-    color: rgb(245, 3, 225);
+    color: rgb(150, 7, 15);
     padding-top: 40px;
     padding-bottom: 20px;
     font-weight: bolder;
@@ -188,7 +188,7 @@ td,th{
 }
 #contact{
     color: black;
-    background-color: rgb(153, 102, 201);
+    background-color: rgb(165, 11, 44);
     padding-bottom: 20px;
 }
 #contactdetails h2{
