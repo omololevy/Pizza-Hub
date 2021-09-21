@@ -22,6 +22,7 @@ nav .navbar{
 .nav-item a{
     font-size: 20px;
     font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* styling landing page */
@@ -37,7 +38,7 @@ nav .navbar{
 }
 .pi{color: rgb(252, 137, 6);}
 .zz{color: rgb(133, 96, 17);}
-.hub{color: rgb(224, 75, 64);}
+.hub{color: rgb(224, 213, 64);}
 .text a{
     font-size: 20px;
     font-weight: 700;
@@ -47,7 +48,13 @@ h1 {
     letter-spacing: 8px;
     font-weight: bolder;
     font-size: 60px;
-    text-shadow: 2px 2px 5px rgb(156, 40, 5);
+    text-shadow: 2px 2px 5px rgb(230, 106, 5);
+}
+
+h2 {
+  color: #f14603;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:600;
 }
 h5 {
     letter-spacing: 3px;
@@ -71,7 +78,7 @@ h5 {
     font-weight: 800;
 }
 .controls-top h2{
-    color: rgb(150, 7, 15);
+    color: rgb(233, 130, 13);
     padding-top: 40px;
     padding-bottom: 20px;
     font-weight: bolder;
@@ -179,7 +186,7 @@ td,th{
     font-size: 22px;
     padding-right: 8%;
     padding-left: 5%;
-    color: #c0222f;
+    color: #f18a03;
 }
 
 /* how to reach us and location section */
