@@ -29,7 +29,7 @@
         <!-- Navbar section -->
         <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
           <a class="navbar-brand" href="#overlay" style="font-family:'Kalam', cursive;font-size: 30px;"><span
-              class="pi">PI</span><span class="zz">ZZ</span>A <span class="Hub">HUB</span></a>
+              class="pi">PI</span><span class="zz">ZZ</span>A <span class="hub">HUB</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,9 +53,9 @@
           <div class="container" id="head">
             <div class="row">
               <div class="col-md-12 mb-4 white-text text-center text">
-                <h1 class="h1-reponsive" style="font-size: 70px;"><strong><span class="pi">Pi</span><span
-                      class="zz">zz</span>a <span class="Hub">Hub</span></h1>
-                <h5 class="text-uppercase mb-4 gold-text"><strong>Best Pizza Shop In The Country!!</strong></h5>
+                <h1 class="h1-responsive" style="font-size: 70px;"><strong><span class="pi">Pi</span><span
+                      class="zz">zz</span>a <span class="hub">Hub</span></h1>
+                <h5 class="text-uppercase mb-4 gold-text"><strong>Best Pizza Suppliers In The Country!!</strong></h5>
                 <a class="btn btn-orange button floater" href="#make-order"> Order Now!</a>
               </div>
             </div>
@@ -66,6 +66,7 @@
       </div>
   </header>
 
+  <!---------PIZZA SAMPLES------------->
   <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="sample">
     <div class="controls-top ">
       <h2>Samples</h2>
@@ -102,73 +103,191 @@
         </div>
       </div>
     </div>
+  </div>
+  <!---------END OF SAMPLE------------->
 
-    <div class="container-fluid" id="contact">
-      <div class="controls-top ">
-        <h2>Contact Us</h2>
+  <!---------ORDER SECTION------------->
+  <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now"> 
+        <h2>Make Your Order!!</h2>
       </div>
-      <div class="row" id="contactdetails">
-        <div class="col-md-1">
+      <h2>Order your pizza and have it delivered it to you at your door step!</h2>
+      <div class="row">
+          <div class="col-sm-5">
+            <form action="">
+              <!-- SELECT FLAVOUR -->
+              <label for="select">Select Your Flavor</label>
+              <select class="browser-default custom-select custom-select-md mb-3 name">
+                <option selected value="0">Select flavor here</option>
+                <option value="Chicken Tikka">Chicken Tikka</option>
+                <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
 
-        </div>
-        <div class="col-md-3 text-justify">
-          <h2>Location</h2>
-          <p><span class="pi">PI</span><span class="zz">ZZ</span>A <span class="Hub">Hub</span></p>
-          <p>Tuskys | Railway Road</p>
-          <p>1234, Kisumu </p>
-        </div>
-        <div class="col-md-3">
-          <h2>Customer Care</h2>
-          <p>omololevy@gmail.com</p>
-          <p>Phone: +254 748 939901</p>
-        </div>
-        <div class="col-md-4">
-          <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="300" height="170" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Blue%20sands%20hotel%20Kisumu%20Kenya&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                href="https://fmovies-online.net">fmovies</a><br>
-              <a href="https://www.embedgooglemap.net">full width google map</a>
-
+              </select>
+              <!-- SELECT PIZZA SIZE -->
+              <label for="select">Select Size</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                <option selected value="0">Select size here</option>
+                <option value="large">Large   (Ksh.1200)</option>
+                <option value="medium">Medium    (Ksh.850)</option>
+                <option value="small">Small  (Ksh.600)</option>
+              </select>
+              <!-- SELECT CRUST -->
+              <label for="crust">Choose your favorite Crust!</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                <option selected value="0">Select your preferred crust!</option>
+                <option value="Crispy">Crispy  (Ksh.200)</option>
+                <option value="Stuffed">Stuffed  (Ksh.150)</option>
+                <option value="Gluten-free">Gluten-free  (Ksh.180)</option>
+              </select>
+              <!-- SELECT TOPPINGS  -->
+              <label for="Toppings">Select Your Toppings at Ksh.50 each</label><br>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                  <label class="custom-control-label" for="Sausage">Sausage</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                  <label class="custom-control-label" for="Bacon">Bacon</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                  <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                </div>
+                <br><br>
+              <button type="submit" class="btn btn-orange proceed">Proceed</button>
+            </form>
+          </div>
+          <!-- PROCEED TO ORDER -->
+          <div class="col-sm-7">
+            <div id="information">
+              <p>Your order will be processed immediately and delivery done within one hour of placing.</p>
+              <p>Make sure you have sufficient amount at delivery.</p>
+              <p>In case of any unsatisfation or complaint on our product, kindly don't hesitate to reach out to us soonest.</p>
+              <p id="regards">Nice time with your PIZZA!!</p>
+            </div>
+            <div class="choise">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzaname"></td>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>                  
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p> 
+                <p id="addedprice">Delivery will cost Ksh.150</p>
+                <p id="finallmessage"></p>
+              </div>
+              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange deliver">Home delivery?</button>
+            </div>
+            <!-- on delivery -->
+            <div class="delivery">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                  </div>
+                </form>
             </div>
           </div>
-        </div>
-        <div class="col-md-1"></div>
       </div>
-      <div>
-        <a href="#overlay"><img class="bounce arrowup floater" src="./images/sec/uppp.png" alt=""></a>
-      </div>
-    
-
-    <!---------FOOTER------------->
-    <div class="row">
-      <div class=" text-center footer">
-        <ul class="social-list">
-          <li class="social-list__item "><a class="social-list__link" href="https://twitter.com/kaylor254"><i
-                class="fab fa-twitter"></i></a></li>
-
-          <li class="social-list__item "><a class="social-list__link" href=""><i class="fab fa-linkedin"></i></a></li>
-
-          <li class="social-list__item "><a class="social-list__link"
-              href="https://www.facebook.com/people/Levy-Omolo/100009697989580/"><i class="fab fa-facebook"></i></a>
-          </li>
-
-          <li class="social-list__item "><a class="social-list__link" href=""><i class="fab fa-instagram"></i></a>
-          </li>
-
-          <li class="social-list__item "><a class="social-list__link" href="https://omololevy.github.io"><i
-                class="fab fa-github"></i></a></li>
-          <li class="text-white">&copy; 2021 | Pizza Hub | omololevy@gmail.com</li>
-
-        </ul>
-      </div>
-
     </div>
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/mdb.js"></script>
-    <script src="./js/script.js"></script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  </div>
+  <!---------CONTACT US------------->
+  <div class="container-fluid" id="contact">
+    <div class="controls-top ">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row" id="contactdetails">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-3 text-justify">
+        <h2>Location</h2>
+        <p><span class="pi">PI</span><span class="zz">ZZ</span>A <span class="hub">Hub</span></p>
+        <p>Tuskys | Railway Road</p>
+        <p>1234, Kisumu </p>
+      </div>
+      <div class="col-md-3">
+        <h2>Customer Care</h2>
+        <p>omololevy@gmail.com</p>
+        <p>Phone: +254 748 939901</p>
+      </div>
+      <div class="col-md-4">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="300" height="170" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Blue%20sands%20hotel%20Kisumu%20Kenya&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://fmovies-online.net">fmovies</a><br>
+            <a href="https://www.embedgooglemap.net">full width google map</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div>
+      <a href="#overlay"><img class="bounce arrowup floater" src="./images/sec/uppp.png" alt=""></a>
+    </div>
+  </div>
+  <!---------END OF CONTACT US------------->
+  <!---------FOOTER------------->
+  <div class="row">
+    <div class=" text-center footer">
+      <ul class="social-list">
+        <li class="social-list__item "><a class="social-list__link" href="https://twitter.com/kaylor254"><i
+              class="fab fa-twitter"></i></a></li>
+
+        <li class="social-list__item "><a class="social-list__link" href=""><i class="fab fa-linkedin"></i></a></li>
+
+        <li class="social-list__item "><a class="social-list__link"
+            href="https://www.facebook.com/people/Levy-Omolo/100009697989580/"><i class="fab fa-facebook"></i></a>
+        </li>
+
+        <li class="social-list__item "><a class="social-list__link" href=""><i class="fab fa-instagram"></i></a>
+        </li>
+
+        <li class="social-list__item "><a class="social-list__link" href="https://omololevy.github.io"><i
+              class="fab fa-github"></i></a></li>
+        <li class="text-white">&copy; 2021 | Pizza Hub | omololevy@gmail.com</li>
+
+      </ul>
+    </div>
+
+  </div>
+  <!---------END OF FOOTER------------->
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/script.js"></script>
+
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 </body>
 
 </html>
